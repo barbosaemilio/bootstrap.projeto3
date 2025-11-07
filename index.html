@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Taiguara</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fs-1">Padaria Taiguara</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item">
+                        <a href="#sobre-a-padaria" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a Padaria
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#encomendas" class="nav-link">
+                            <i class="bi bi-gift me-1"></i>
+                            Encomendas
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <!-- Carousel -->
+        <section id="carousel-padaria">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./midia/paes.jpg" class="d-block w-100" alt="Pães frescos">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./midia/pao2.jpg" class="d-block w-100" alt="pães especiais">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./midia/bolo.jpg"class="d-block w-100" alt="Confeitaria fina">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./midia/doces1.jpg" class="d-block w-100" alt="Confeitaria fina">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre a Padaria -->
+        <section id="sobre-a-padaria">
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./midia/padaria.jpg" class="d-block w-100 rounded" alt="Interior da padaria">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre a <span class="text-colored">Padaria Taiguara</span></h2>
+                            <p>
+                                Há mais de 20 anos, a Padaria Taiguara encanta seus clientes com produtos de alta qualidade, feitos com ingredientes selecionados e receitas tradicionais aprimoradas ao longo de gerações.
+                            </p>
+                            <p>
+                                Nossa missão é proporcionar momentos especiais através do sabor autêntico do pão quentinho saído do forno, dos doces que despertam memórias afetivas e das delícias que transformam o dia a dia em pequenas celebrações.
+                            </p>
+                            <h3 class="section-title">Nossos <span class="text-colored">diferenciais</span></h3>
+                            <ul>
+                                <li>Farinhas especiais importadas e nacionais</li>
+                                <li>Fermentação natural em parte da produção</li>
+                                <li>Receitas exclusivas da família</li>
+                                <li>Atendimento personalizado</li>
+                                <li>Produtos sem conservantes artificiais</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Encomendas para Eventos -->
+        <section id="encomendas" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Encomendas para <span class="text-colored">Eventos</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="./midia/niver.jpg" class="card-img-top" alt="Aniversário">
+                            <div class="card-body">
+                                <h3 class="section-title text-colored fs-4">
+                                    <i class="bi bi-balloon-heart"></i>
+                                    Aniversário
+                                </h3>
+                                <p>
+                                    Bolos personalizados, docinhos, salgados e muito mais para tornar seu aniversário inesquecível. Trabalhamos com temas, cores e sabores especiais.
+                                </p>
+                                <ul>
+                                    <li>Bolos temáticos</li>
+                                    <li>Doces variados</li>
+                                    <li>Salgados assados</li>
+                                    <li>Mini porções</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="./midia/casamento.jpg" class="card-img-top" alt="Casamento">
+                            <div class="card-body">
+                                <h3 class="section-title text-colored fs-4">
+                                    <i class="bi bi-hearts"></i>
+                                    Casamento
+                                </h3>
+                                <p>
+                                    Doces finos, bolos de andares, lembrancinhas e muito sabor para o dia mais especial da sua vida. Criamos experiências gastronômicas únicas.
+                                </p>
+                                <ul>
+                                    <li>Bolos de noiva sofisticados</li>
+                                    <li>Doces finos e brigadeiros gourmet</li>
+                                    <li>Buffet completo de salgados</li>
+                                    <li>Lembrancinhas personalizadas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="./midia/confra.jpg" class="card-img-top" alt="Confraternização">
+                            <div class="card-body">
+                                <h3 class="section-title text-colored fs-4">
+                                    <i class="bi bi-people-fill"></i>
+                                    Confraternização
+                                </h3>
+                                <p>
+                                    Para eventos corporativos ou reuniões familiares, oferecemos opções práticas e deliciosas que agradam a todos os paladares.
+                                </p>
+                                <ul>
+                                    <li>Cestas de café da manhã</li>
+                                    <li>Buffet de salgados e doces</li>
+                                    <li>Pães especiais e focaccias</li>
+                                    <li>Opções vegetarianas e veganas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cardápio -->
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Nosso <span class="text-colored">Cardápio</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#paes" class="fw-bold text-start nav-link text-colored active">Pães</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bolos" class="fw-bold text-start nav-link text-colored">Bolos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#doces" class="fw-bold text-start nav-link text-colored">Doces</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#salgados" class="fw-bold text-start nav-link text-colored">Salgados</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas" class="fw-bold text-start nav-link text-colored">Bebidas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="fw-bold text-start nav-link text-colored">Bebidas Alcoólicas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <!-- Pães -->
+                            <div class="tab-pane active" id="paes">
+                                <div class="row">
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/frances.jpg" alt="Pão Francês">
+                                        <h5 class="text-colored fw-bold mt-2">Pão Francês</h5>
+                                        <p class="cardapio-descricao">
+                                            Tradicional pão francês, crocante por fora e macio por dentro.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/integral.jpg" alt="Pão Integral">
+                                        <h5 class="text-colored fw-bold mt-2">Pão Integral</h5>
+                                        <p class="cardapio-descricao">
+                                            Pão saudável com grãos integrais e sementes.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/paodequeijo.jpg" alt="Pão de Queijo">
+                                        <h5 class="text-colored fw-bold mt-2">Pão de Queijo</h5>
+                                        <p class="cardapio-descricao">
+                                            Tradicional mineiro, macio e cheiroso.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/croissant.jpg" alt="Croissant">
+                                        <h5 class="text-colored fw-bold mt-2">Croissant</h5>
+                                        <p class="cardapio-descricao">
+                                            Folhado e amanteigado, perfeito para o café da manhã.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Bolos -->
+                            <div class="tab-pane" id="bolos">
+                                <div class="row">
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/chocolate.jpg" alt="Bolo de Chocolate">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo de Chocolate</h5>
+                                        <p class="cardapio-descricao">
+                                            Massa fofinha com cobertura de chocolate belga.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/cenoura.jpg" alt="Bolo de Cenoura">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo de Cenoura</h5>
+                                        <p class="cardapio-descricao">
+                                            Clássico brasileiro com cobertura de chocolate.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/fuba.jpg" alt="Bolo de Fubá">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo de Fubá</h5>
+                                        <p class="cardapio-descricao">
+                                            Tradicional receita caseira com erva-doce.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/velvet.jpg" alt="Bolo Red Velvet">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo Red Velvet</h5>
+                                        <p class="cardapio-descricao">
+                                            Sofisticado bolo vermelho com cream cheese.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Doces -->
+                            <div class="tab-pane" id="doces">
+                                <div class="row">
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/brigadeiro.jpg" alt="Brigadeiro">
+                                        <h5 class="text-colored fw-bold mt-2">Brigadeiro Gourmet</h5>
+                                        <p class="cardapio-descricao">
+                                            Tradicional doce brasileiro com chocolate nobre.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/beijinho.jpg" alt="Beijinho">
+                                        <h5 class="text-colored fw-bold mt-2">Beijinho</h5>
+                                        <p class="cardapio-descricao">
+                                            Delícia de coco com leite condensado.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/macaron.jpg" alt="Macaron">
+                                        <h5 class="text-colored fw-bold mt-2">Macaron</h5>
+                                        <p class="cardapio-descricao">
+                                            Doce francês com diversas opções de recheio.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/tortadoce.jpg" alt="Torta Doce">
+                                        <h5 class="text-colored fw-bold mt-2">Torta Doce</h5>
+                                        <p class="cardapio-descricao">
+                                            Massa crocante com recheios variados.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Salgados -->
+                            <div class="tab-pane" id="salgados">
+                                <div class="row">
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/coxinha.jpg" alt="Coxinha">
+                                        <h5 class="text-colored fw-bold mt-2">Coxinha</h5>
+                                        <p class="cardapio-descricao">
+                                            Massa macia recheada com frango desfiado.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/empanada.jpg" alt="Empada">
+                                        <h5 class="text-colored fw-bold mt-2">Empada</h5>
+                                        <p class="cardapio-descricao">
+                                            Massa amanteigada com recheios variados.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/Risoles.png" alt="Risole">
+                                        <h5 class="text-colored fw-bold mt-2">Risole</h5>
+                                        <p class="cardapio-descricao">
+                                            Massa crocante com recheio de carne ou queijo.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/quiche.jpg" alt="Quiche">
+                                        <h5 class="text-colored fw-bold mt-2">Quiche</h5>
+                                        <p class="cardapio-descricao">
+                                            Massa folhada com recheio de legumes e queijos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Bebidas -->
+                            <div class="tab-pane" id="bebidas">
+                                <div class="row">
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/cafe.jpg" alt="Café Expresso">
+                                        <h5 class="text-colored fw-bold mt-2">Café Expresso</h5>
+                                        <p class="cardapio-descricao">
+                                            Grãos selecionados, moídos na hora.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/suco.jpg" alt="Suco Natural">
+                                        <h5 class="text-colored fw-bold mt-2">Suco Natural</h5>
+                                        <p class="cardapio-descricao">
+                                            Feito na hora com frutas frescas.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/chagelado.jpg" alt="Chá Gelado">
+                                        <h5 class="text-colored fw-bold mt-2">Chá Gelado</h5>
+                                        <p class="cardapio-descricao">
+                                            Refrescante, com sabores naturais.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/vitamina.jpg" alt="Vitaminas">
+                                        <h5 class="text-colored fw-bold mt-2">Vitaminas</h5>
+                                        <p class="cardapio-descricao">
+                                            Combinações de frutas com leite ou iogurte.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Bebidas Alcoólicas -->
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/vinho.jpg" alt="Vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Vinho</h5>
+                                        <p class="cardapio-descricao">
+                                            Seleção de vinhos nacionais e importados.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/cerveja.jpg" alt="Cerveja Artesanal">
+                                        <h5 class="text-colored fw-bold mt-2">Cerveja Artesanal</h5>
+                                        <p class="cardapio-descricao">
+                                            Diferentes estilos e sabores especiais.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/espumante.jpg" alt="Espumante">
+                                        <h5 class="text-colored fw-bold mt-2">Espumante</h5>
+                                        <p class="cardapio-descricao">
+                                            Para celebrações e momentos especiais.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 menu-item">
+                                        <img class="d-block w-100 rounded" src="./midia/drinks.jpg" alt="Drinks">
+                                        <h5 class="text-colored fw-bold mt-2">Drinks Especiais</h5>
+                                        <p class="cardapio-descricao">
+                                            Coquetéis criativos com ingredientes premium.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fale Conosco -->
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form id="form-contato">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" name="nome" class="form-control" required>
+                                <div class="invalid-feedback">Por favor, informe seu nome.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                                <div class="invalid-feedback">Por favor, informe um e-mail válido.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone</label>
+                                <input type="tel" id="telefone" name="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" required></textarea>
+                                <div class="invalid-feedback">Por favor, escreva sua mensagem.</div>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5 me-3">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 me-3">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 me-3">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua dos Padeiros, 123 - Centro<br>
+                                São Paulo - SP, 01234-567
+                            </p>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-clock-fill"></i>
+                                Horário de funcionamento
+                            </h3>
+                            <p>
+                                Segunda a Sexta: 7h às 20h<br>
+                                Sábados: 7h às 18h<br>
+                                Domingos: 7h às 13h
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Máscara para telefone
+            $('#telefone').mask('(00) 00000-0000');
+            
+            // Validação do formulário
+            $('#form-contato').on('submit', function(e) {
+                e.preventDefault();
+                
+                let formValido = true;
+                
+                // Validar nome
+                if ($('#nome').val().trim() === '') {
+                    $('#nome').addClass('is-invalid');
+                    formValido = false;
+                } else {
+                    $('#nome').removeClass('is-invalid');
+                }
+                
+                // Validar email
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test($('#email').val())) {
+                    $('#email').addClass('is-invalid');
+                    formValido = false;
+                } else {
+                    $('#email').removeClass('is-invalid');
+                }
+                
+                // Validar mensagem
+                if ($('#mensagem').val().trim() === '') {
+                    $('#mensagem').addClass('is-invalid');
+                    formValido = false;
+                } else {
+                    $('#mensagem').removeClass('is-invalid');
+                }
+                
+                if (formValido) {
+                    alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                    $('#form-contato')[0].reset();
+                }
+            });
+            
+            // Remover validação quando o usuário começar a digitar
+            $('input, textarea').on('input', function() {
+                $(this).removeClass('is-invalid');
+            });
+        });
+    </script>
+</body>
+
+</html>

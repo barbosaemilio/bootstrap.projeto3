@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #8B4513;
+    --secondary-color: #D2691E;
+    --light-color: #FFF8DC;
+    --accent-color: #CD853F;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: var(--light-color);
+}
+
+.navbar-toggler {
+    background-color: var(--light-color);
+}
+
+.section-title {
+    font-family: 'Pacifico', cursive;
+}
+
+#sobre-a-padaria,
+#cardapio {
+    background-color: var(--light-color);
+}
+
+.text-colored {
+    color: var(--primary-color);
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.nav-cardapio .nav-link {
+    color: var(--primary-color);
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-item {
+    margin-bottom: 30px;
+}
+
+.menu-item img {
+    height: 180px;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}
